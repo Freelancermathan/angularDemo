@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "demo": {
+    "angularDemo": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -16,7 +16,7 @@
             "browser": "src/main.ts",
             "tsConfig": "tsconfig.app.json",
             "baseHref": "/",
-            "outputPath": "dist/demo",
+            "outputPath": "dist/angularDemo",
             "assets": [
               {
                 "glob": "**/*",
@@ -55,10 +55,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "demo:build:production"
+              "buildTarget": "angularDemo:build:production"
             },
             "development": {
-              "buildTarget": "demo:build:development"
+              "buildTarget": "angularDemo:build:development"
             }
           },
           "defaultConfiguration": "development"
