@@ -1,0 +1,63 @@
+/* NEON Glow Section */
+.neon-section {
+  background: linear-gradient(
+      135deg,
+      #0b0f19,
+      #0f1a32);
+  padding: 60px 0;
+  color: #fff;
+  text-align: center;
+  height: 100vh;
+}
+
+.neon-title {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #87f3ff;
+  text-shadow: 0 0 12px #00eaff, 0 0 24px #00eaff;
+}
+
+/* Neon Row */
+.neon-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Neon Card */
+.neon-card {
+  flex: 1;
+  min-width: 250px;
+  padding: 26px;
+  border-radius: 16px;
+  background: rgba(15, 20, 35, 0.7);
+  border: 2px solid #00eaff;
+  box-shadow: 0 0 12px #00eaff40;
+  backdrop-filter: blur(4px);
+  transition: 0.3s ease;
+}
+
+.neon-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 18px #00eaff, 0 0 40px #00eaff80, inset 0 0 14px #00eaff60;
+  border-color: #29f3ff;
+}
+
+.neon-card h3 {
+  margin-bottom: 12px;
+  color: #5df7ff;
+  text-shadow: 0 0 8px #00eaff;
+}
+
+.neon-card p {
+  color: #d4faff;
+  opacity: 0.85;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .neon-row {
+    flex-direction: column;
+  }
+}
