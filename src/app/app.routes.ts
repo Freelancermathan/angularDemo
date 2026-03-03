@@ -6,7 +6,7 @@ import { Contact } from './pages/contact/contact';
 import { NgModule } from '@angular/core';
 
 export const routes: Routes = [
-    { path: '', component: Home, pathMatch: 'full' },
+  { path: '', component: Home, pathMatch: 'full' },
   { path: 'about', component: About },
   { path: 'services', component: Services },
   { path: 'contact', component: Contact },

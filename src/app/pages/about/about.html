@@ -1,4 +1,4 @@
-<section class="about-section">
+<!-- <section class="about-section">
   <div class="container">
 
     <div class="about-header">
@@ -10,6 +10,8 @@
     </div>
 
     <div class="about-grid">
+      
+      
 
       <div class="about-card">
         <h3>Our Mission</h3>
@@ -24,4 +26,29 @@
     </div>
 
   </div>
-</section>
+</section> -->
+
+<!-- *ngIf Example -->
+<div *ngIf="isLoggedIn">
+  <h2>Welcome Back 👋</h2>
+</div>
+
+<!-- *ngFor Example -->
+<ul>
+  <li *ngFor="let user of users; let i = index">
+    {{ i + 1 }} - {{ user }}
+  </li>
+</ul>
+
+
+<div [ngSwitch]="role">
+
+  <h2 *ngSwitchCase="'admin'">Welcome Admin 👑</h2>
+
+  <h2 *ngSwitchCase="'user'">Welcome User 👋</h2>
+
+  <h2 *ngSwitchCase="'guest'">Welcome Guest 🙂</h2>
+
+  <h2 *ngSwitchDefault>Access Denied ❌</h2>
+
+</div>
